@@ -10,6 +10,7 @@ import docs from '../../../assets/common/icon-docs.svg';
 import FadeContent from '../../../content/Animations/FadeContent/FadeContent';
 
 import './LandingHeader.css';
+import LiquidButton from '../../../ts-default/Components/LiquidButton/LiquidButton';
 
 const LandingHeader = () => {
   const isMobile = useMediaQuery('(max-width: 1024px)');
@@ -20,7 +21,7 @@ const LandingHeader = () => {
       <nav className="header-content">
         <FadeContent blur>
           <Link className='logo' to="/">
-            <img src={reactbitslogo} alt="The shape of a 3 point atom, representing a fraction of ReactJS" />
+            <LiquidButton label='🩸' width={50} height={50}/>
           </Link>
         </FadeContent>
 

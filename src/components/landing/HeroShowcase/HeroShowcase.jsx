@@ -11,8 +11,9 @@ const HeroShowcase = () => {
   return (
     <nav className="component-nav-container">
       <AnimatedContent reverse initialOpacity={0}>
-        <div  onClick={() => navigate('/components/liquid-button')}>
-          <LiquidButton className='cursor-pointer' width={300} height={100}/>
+        <div onClick={() => navigate('/components/liquid-button')} >
+          <LiquidButton className='cursor-pointer animate-pulse hover:animate-none' primaryColor="#ff9034"
+            secondaryColor="#00d9ff" width={300} height={100} />
         </div>
       </AnimatedContent>
     </nav>

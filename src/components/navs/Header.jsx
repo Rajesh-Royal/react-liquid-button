@@ -8,6 +8,7 @@ import Logo from '../../assets/logos/reactbits-logo.svg';
 
 import BlurText from '../../content/TextAnimations/BlurText/BlurText';
 import FadeContent from '../../content/Animations/FadeContent/FadeContent';
+import LiquidButton from '../../ts-default/Components/LiquidButton/LiquidButton';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -17,7 +18,7 @@ const Header = () => {
     <Box zIndex={100} className='main-nav'>
       <Flex className='nav-items' h={20} alignItems="center" justifyContent="space-between">
         <Link to="/" className='logo'>
-          <Image src={Logo} alt="Logo" />
+          <LiquidButton label='🩸' width={50} height={50} />
         </Link>
 
         {/* Hamburger menu button for small screens */}
