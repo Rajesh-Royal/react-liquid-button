@@ -1,9 +1,8 @@
 <div align="center">
- <br>
- <br>
-[React liquid button demo video](https://github.com/user-attachments/assets/5998f7a8-c398-4924-9590-8f93a2c4b4c0)
- <br>
- <br>
+ 
+[Liquid-button-preview.webm](https://github.com/user-attachments/assets/0a4548e9-8739-4e66-8a6c-b7e06b837476)
+
+
 </div>
 
 <div align="center">
@@ -24,7 +23,7 @@ Go to [reactliquidbutton.vercel.app](https://reactliquidbutton.vercel.app) to vi
 
 ## About
 
-Liquid Button is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
+Liquid Button is a React component made to spice up your web creation. The component is enhanced with customization options as props, to make it easy for you to get exactly what you need.
 
 ## License
 
