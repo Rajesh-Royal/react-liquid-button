@@ -24,7 +24,7 @@ Go to [reactliquidbutton.vercel.app](https://reactliquidbutton.vercel.app) to vi
 
 ## About
 
-React Bits is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
+Liquid Button is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
 
 ## License
 

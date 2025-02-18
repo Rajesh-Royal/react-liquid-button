@@ -25,7 +25,7 @@ const LandingHero = () => {
   const isVisible = useScrollVisibility();
 
   return (
-    <div className="hero-content">
+    <div className="hero-content" style={{overflow: 'hidden'}}>
       <div className="type-logo">
         <AnimatedContent initialOpacity={isMobile ? 0 : 1} scale={0.8} reverse={isMobile}>
           <HeroType />
@@ -39,7 +39,7 @@ const LandingHero = () => {
             <div className="divider"></div>
             <FadeContent blur duration={1000}>
               <p>
-                Hand-picked animated components collection for{" "}
+                Animated button component for{" "}
                 <span>creative developers</span>
               </p>
             </FadeContent>
