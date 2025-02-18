@@ -8,7 +8,6 @@ import PreviewSlider from "../../components/common/PreviewSlider";
 import CodeExample from "../../components/code/CodeExample";
 import Dependencies from "../../components/code/Dependencies";
 import PropTable from "../../components/common/PropTable";
-import CliInstallation from "../../components/code/CliInstallation";
 
 import LiquidButtonJsComponent from "../../content/Components/LiquidButton/LiquidButton";
 import { liquidButton } from "../../constants/code/Components/liquidButtonCode";
@@ -144,10 +143,6 @@ const TiltedCardDemo = () => {
       <CodeTab>
         <CodeExample codeObject={liquidButton} />
       </CodeTab>
-
-      <CliTab>
-        <CliInstallation {...liquidButton} />
-      </CliTab>
     </TabbedLayout>
   );
 };
