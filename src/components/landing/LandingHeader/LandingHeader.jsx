@@ -31,7 +31,7 @@ const LandingHeader = () => {
                 as="a"
                 fontWeight={500}
                 fontSize="16px"
-                href="https://github.com/DavidHDev/react-bits"
+                href="https://github.com/Rajesh-Royal/liquid-button"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -40,26 +40,13 @@ const LandingHeader = () => {
             </FadeContent>
           )}
 
-
-          <FadeContent blur>
-            <Text
-              as={Link}
-              fontWeight={500}
-              fontSize="16px"
-              to={pathname !== '/showcase' ? '/showcase' : '/text-animations/split-text'}
-            >
-              {pathname !== '/showcase' && <><img src={showcase} alt='gallery' /> Showcase</>}
-              {pathname === '/showcase' && <><img src={docs} alt='gallery' /> Docs</>}
-            </Text>
-          </FadeContent>
-
-          {!isMobile && pathname !== '/showcase' && (
+          {!isMobile && (
             <FadeContent blur>
               <Text
                 as={Link}
                 fontWeight={500}
                 fontSize="16px"
-                to="/text-animations/split-text"
+                to="/components/liquid-button"
               >
                 <img src={docs} alt='a page with some writing on it' /> Docs
               </Text>

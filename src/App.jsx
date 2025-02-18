@@ -9,7 +9,6 @@ import Sidebar from './components/navs/Sidebar';
 
 import LandingPage from './pages/LandingPage'
 import CategoryPage from './pages/CategoryPage'
-import ShowcasePage from './pages/ShowcasePage';
 
 export default function App() {
   useEffect(() => {
@@ -20,7 +19,6 @@ export default function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/showcase" element={<ShowcasePage />} />
         <Route path="/:category/:subcategory" element={
           <main className='app-container'>
             <Header />
