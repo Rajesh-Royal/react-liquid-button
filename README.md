@@ -28,3 +28,5 @@ Liquid Button is a React component made to spice up your web creation. The compo
 ## License
 
 Licensed under the [MIT license](https://github.com/Rajesh-Royal/react-liquid-button/blob/main/LICENSE.md).
+
+**Reference:** [Parent Repo](https://www.reactbits.dev/)
