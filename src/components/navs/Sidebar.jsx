@@ -18,9 +18,9 @@ import { ArrowForwardIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 
 import { Link, useLocation } from 'react-router-dom';
 
-import Logo from '../../assets/logos/reactbits-logo.svg';
 import { useRef, useState } from 'react';
 import { CATEGORIES, NEW, UPDATED } from '../../constants/Categories';
+import LiquidButton from '../../ts-default/Components/LiquidButton/LiquidButton';
 
 const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -37,7 +37,7 @@ const Sidebar = () => {
       <Box display={{ md: 'none' }} position="fixed" top={0} left={0} zIndex="overlay" p={"1em"} w={"100%"} bgColor={'#060606'}>
         <Flex alignItems="center" gap={"1em"} justifyContent="space-between" transition=".2s ease" transform={isDrawerOpen ? 'translateY(-200%)' : 'none'}>
           <Link to="/">
-            <Image src={Logo} height="25px" alt='Liquid Button logo' />
+          <LiquidButton label='🩸' width={50} height={50} />
           </Link>
           <IconButton borderRadius='10px' border="1px solid #ffffff1c" bg="#060606" ref={btnRef} icon={<HamburgerIcon />} onClick={() => setDrawerOpen(true)} />
         </Flex>
@@ -49,7 +49,7 @@ const Sidebar = () => {
           <DrawerHeader py={0} h={"72px"} borderBottomWidth="1px" className='sidebar-logo'>
             <Flex alignItems="center" justifyContent="space-between">
               <Link to="/">
-                <Image height="25px" src={Logo} alt="Bits Logo" />
+              <LiquidButton label='🩸' width={25} height={25} />
               </Link>
               <IconButton
                 borderRadius='10px' border="1px solid #ffffff1c" bg="#060606"
@@ -69,13 +69,10 @@ const Sidebar = () => {
             <Divider my={4} />
             <Text color="#a6a6a6" mb={3}>Useful Links</Text>
             <Flex direction="column">
-              <Link to="https://github.com/DavidHDev/react-bits" target='_blank' display="block" mb={2} onClick={() => setDrawerOpen(false)}>
+              <Link to="https://github.com/Rajesh-Royal/react-liquid-button" target='_blank' display="block" mb={2} onClick={() => setDrawerOpen(false)}>
                 GitHub<ArrowForwardIcon boxSize={7} transform={"rotate(-45deg)"} position="relative" top="-1px" />
               </Link>
-              <Link to="/showcase" display="block" mb={2} onClick={() => setDrawerOpen(false)}>
-                Showcase<ArrowForwardIcon boxSize={7} transform={"rotate(-45deg)"} position="relative" top="-1px" />
-              </Link>
-              <Link to="https://davidhaz.com/" target='_blank' display="block" mb={2} onClick={() => setDrawerOpen(false)}>
+              <Link to="https://portfolio-rajesh-royal.vercel.app/" target='_blank' display="block" mb={2} onClick={() => setDrawerOpen(false)}>
                 Who made this?<ArrowForwardIcon boxSize={7} transform={"rotate(-45deg)"} position="relative" top="-1px" />
               </Link>
             </Flex>

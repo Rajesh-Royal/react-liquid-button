@@ -4,8 +4,6 @@ import { ArrowForwardIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import { TiStarFullOutline } from "react-icons/ti";
 import { useStars } from '../../hooks/useStars';
 
-import Logo from '../../assets/logos/reactbits-logo.svg';
-
 import BlurText from '../../content/TextAnimations/BlurText/BlurText';
 import FadeContent from '../../content/Animations/FadeContent/FadeContent';
 import LiquidButton from '../../ts-default/Components/LiquidButton/LiquidButton';
@@ -49,7 +47,7 @@ const Header = () => {
             <DrawerBody px={0} py={0}>
               <Flex direction="column">
                 <Flex alignItems="center" justifyContent="space-between" h={'57px'} mb={6} borderBottom={"1px solid #ffffff1c"} px={6}>
-                  <Image src={Logo} alt="Logo" height="25px" />
+                <LiquidButton label='🩸' width={25} height={25} />
                   <IconButton
                     size="md"
                     icon={<CloseIcon boxSize={3} />}

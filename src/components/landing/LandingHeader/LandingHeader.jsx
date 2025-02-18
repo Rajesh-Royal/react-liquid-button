@@ -2,7 +2,6 @@ import { Flex, Text } from '@chakra-ui/react';
 import { useMediaQuery } from 'react-haiku';
 import { Link, useLocation } from 'react-router-dom';
 
-import reactbitslogo from '../../../assets/logos/reactbits-logo.svg';
 import github from '../../../assets/common/icon-github.svg';
 import showcase from '../../../assets/common/icon-showcase.svg';
 import docs from '../../../assets/common/icon-docs.svg';
