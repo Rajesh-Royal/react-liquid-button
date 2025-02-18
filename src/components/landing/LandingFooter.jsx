@@ -7,7 +7,7 @@ const LandingFooter = () => (
     <FadeContent blur>
       <Flex alignItems="center">
         Made with <Box mx={2}><FiHeart /></Box> by
-        <Link ml={1} href="https://davidhaz.com/" target="_blank" color="#999">
+        <Link ml={1} href="https://portfolio-rajesh-royal.vercel.app/" target="_blank" color="#999">
           this guy
         </Link>
       </Flex>

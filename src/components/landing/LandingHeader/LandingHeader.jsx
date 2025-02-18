@@ -10,6 +10,7 @@ import docs from '../../../assets/common/icon-docs.svg';
 import FadeContent from '../../../content/Animations/FadeContent/FadeContent';
 
 import './LandingHeader.css';
+import LiquidButton from '../../../ts-default/Components/LiquidButton/LiquidButton';
 
 const LandingHeader = () => {
   const isMobile = useMediaQuery('(max-width: 1024px)');
@@ -20,7 +21,7 @@ const LandingHeader = () => {
       <nav className="header-content">
         <FadeContent blur>
           <Link className='logo' to="/">
-            <img src={reactbitslogo} alt="The shape of a 3 point atom, representing a fraction of ReactJS" />
+            <LiquidButton label='🩸' width={50} height={50}/>
           </Link>
         </FadeContent>
 
@@ -31,7 +32,7 @@ const LandingHeader = () => {
                 as="a"
                 fontWeight={500}
                 fontSize="16px"
-                href="https://github.com/DavidHDev/react-bits"
+                href="https://github.com/Rajesh-Royal/liquid-button"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -40,26 +41,13 @@ const LandingHeader = () => {
             </FadeContent>
           )}
 
-
-          <FadeContent blur>
-            <Text
-              as={Link}
-              fontWeight={500}
-              fontSize="16px"
-              to={pathname !== '/showcase' ? '/showcase' : '/text-animations/split-text'}
-            >
-              {pathname !== '/showcase' && <><img src={showcase} alt='gallery' /> Showcase</>}
-              {pathname === '/showcase' && <><img src={docs} alt='gallery' /> Docs</>}
-            </Text>
-          </FadeContent>
-
-          {!isMobile && pathname !== '/showcase' && (
+          {!isMobile && (
             <FadeContent blur>
               <Text
                 as={Link}
                 fontWeight={500}
                 fontSize="16px"
-                to="/text-animations/split-text"
+                to="/components/liquid-button"
               >
                 <img src={docs} alt='a page with some writing on it' /> Docs
               </Text>

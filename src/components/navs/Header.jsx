@@ -8,6 +8,7 @@ import Logo from '../../assets/logos/reactbits-logo.svg';
 
 import BlurText from '../../content/TextAnimations/BlurText/BlurText';
 import FadeContent from '../../content/Animations/FadeContent/FadeContent';
+import LiquidButton from '../../ts-default/Components/LiquidButton/LiquidButton';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -17,7 +18,7 @@ const Header = () => {
     <Box zIndex={100} className='main-nav'>
       <Flex className='nav-items' h={20} alignItems="center" justifyContent="space-between">
         <Link to="/" className='logo'>
-          <Image src={Logo} alt="Logo" />
+          <LiquidButton label='🩸' width={50} height={50} />
         </Link>
 
         {/* Hamburger menu button for small screens */}
@@ -32,7 +33,7 @@ const Header = () => {
         {/* Links for larger screens */}
         <Flex display={{ base: 'none', md: 'flex' }} alignItems="center" gap={8}>
           <FadeContent blur>
-            <Button as="a" href='https://github.com/DavidHDev/react-bits' rel='noreferrer' target='_blank' bg="white" color="black" padding="0 .6em" fontSize="xs" h={8} _hover={{ bg: 'white', transform: 'scale(0.95)' }}>
+            <Button as="a" href='https://github.com/Rajesh-Royal/liquid-button' rel='noreferrer' target='_blank' bg="white" color="black" padding="0 .6em" fontSize="xs" h={8} _hover={{ bg: 'white', transform: 'scale(0.95)' }}>
               <Text ml={1}>Star on GitHub</Text>
               <Icon ml={2} mr={0.5} as={TiStarFullOutline} />
               {stars ? <BlurText delay={20} text={String(stars)} /> : <Box><Spinner boxSize={2} /></Box>}
@@ -59,15 +60,12 @@ const Header = () => {
                 </Flex>
                 <Flex direction="column" px={6}>
                   <p>Useful Links</p>
-                  <Link to="/text-animations/split-text" display="block" mb={2} onClick={onClose}>
-                    Docs
-                  </Link>
-                  <Link to="https://github.com/DavidHDev/react-bits" target='_blank' display="block" mb={2} onClick={onClose}>
+                  <Link to="https://github.com/Rajesh-Royal/liquid-button" target='_blank' display="block" mb={2} onClick={onClose}>
                     GitHub <ArrowForwardIcon boxSize={7} transform={"rotate(-45deg)"} position="relative" top="-1px" />
                   </Link>
                   <Divider />
                   <p>Other</p>
-                  <Link to="https://davidhaz.com/" target='_blank' display="block" mb={2} onClick={onClose}>
+                  <Link to="https://github.com/Rajesh-Royal" target='_blank' display="block" mb={2} onClick={onClose}>
                     Who made this?<ArrowForwardIcon boxSize={7} transform={"rotate(-45deg)"} position="relative" top="-1px" />
                   </Link>
                 </Flex>
