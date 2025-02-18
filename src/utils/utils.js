@@ -21,7 +21,7 @@ const formatNumber = (num) => {
 
 export const getStarsCount = async () => {
   try {
-    const response = await fetch('https://api.github.com/repos/DavidHDev/react-bits');
+    const response = await fetch('https://api.github.com/repos/Rajesh-Royal/liquid-button');
     const data = await response.json();
     return String(formatNumber(data.stargazers_count)).toLowerCase();
   } catch (error) {
