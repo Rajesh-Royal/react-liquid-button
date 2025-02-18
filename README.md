@@ -24,7 +24,7 @@ Go to [reactbits.dev](https://reactbits.dev/) to view the documentation.
 
 ## About
 
-React Bits is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
+Liquid Button is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
 
 ## Key Features
 - 60 total components (text animations, animations, components, backgrounds), growing every day
@@ -37,7 +37,7 @@ React Bits is a large collection of animated React components made to spice up y
   - TS + Tailwind CSS
 
 ## CLI (<a href="https://jsrepo.dev"><img src="https://jsrepo.dev/badges/jsrepo.svg" width="50" alt="jsrepo"></a>)
-React Bits uses [jsrepo](https://jsrepo.dev) for installing components via CLI. </br>
+Liquid Button uses [jsrepo](https://jsrepo.dev) for installing components via CLI. </br>
 The setup steps can be found on each component's page in the [documentation](https://reactbits.dev/).
 
 ## How To Contribute?

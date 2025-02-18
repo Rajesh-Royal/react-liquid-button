@@ -37,7 +37,7 @@ const Sidebar = () => {
       <Box display={{ md: 'none' }} position="fixed" top={0} left={0} zIndex="overlay" p={"1em"} w={"100%"} bgColor={'#060606'}>
         <Flex alignItems="center" gap={"1em"} justifyContent="space-between" transition=".2s ease" transform={isDrawerOpen ? 'translateY(-200%)' : 'none'}>
           <Link to="/">
-            <Image src={Logo} height="25px" alt='React Bits logo' />
+            <Image src={Logo} height="25px" alt='Liquid Button logo' />
           </Link>
           <IconButton borderRadius='10px' border="1px solid #ffffff1c" bg="#060606" ref={btnRef} icon={<HamburgerIcon />} onClick={() => setDrawerOpen(true)} />
         </Flex>
